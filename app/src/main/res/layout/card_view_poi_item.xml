@@ -111,39 +111,39 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_weight="1"
-                    android:contentDescription="@string/stars"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:id="@+id/image_View1_star_2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_weight="1"
-                    android:contentDescription="@string/stars"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:id="@+id/image_View1_star_3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_weight="1"
-                    android:contentDescription="@string/stars"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:id="@+id/image_View1_str_4"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_weight="1"
-                    android:contentDescription="@string/stars"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:id="@+id/image_View1_star_5"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:contentDescription="@string/stars"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:ignore="ContentDescription" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

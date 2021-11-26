@@ -23,7 +23,7 @@
 
     <style name="Barichara" parent="Theme.Proyecto">
         <item name="colorPrimary">@color/primero</item>
-        <item name="colorPrimary">@color/segundo</item>
-        <item name="colorPrimary">@color/tercero</item>
+        <item name="colorPrimary" tools:ignore="DuplicateDefinition">@color/segundo</item>
+        <item name="colorPrimary" tools:ignore="DuplicateDefinition">@color/tercero</item>
     </style>
 </resources>
