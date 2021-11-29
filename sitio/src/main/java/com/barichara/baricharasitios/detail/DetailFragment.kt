@@ -31,17 +31,12 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val Sitio = args.Sitio
+        val sitio = args.sitio
 
         with(detailBinding){
-            nameTextView.text = Sitio.name
-            aliasTextView.text = Sitio.alias
-            cityTextView.text = Sitio.city
-            occupationTextView.text = Sitio.occupation
-            heightTextView.text = Sitio.height.toString()
-            facebookTextView.text = Sitio.facebook
-            powersTextView.text = Sitio.powers
-            com.squareup.picasso.Picasso.get().load(Sitio.urlPicture).into(pictureImageView)
+            nameTextView.text = sitio.nombre
+            powersTextView.text = sitio.descripcion
+            Picasso.get().load(sitio.urlFoto).into(pictureImageView)
         }
     }
 }
