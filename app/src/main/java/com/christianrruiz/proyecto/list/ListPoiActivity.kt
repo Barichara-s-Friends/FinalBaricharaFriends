@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.christianrruiz.proyecto.model.Sitios
+import com.christianrruiz.proyecto.model.SitiosItem
 import com.google.gson.Gson
 
 class ListPoiActivity : AppCompatActivity() {

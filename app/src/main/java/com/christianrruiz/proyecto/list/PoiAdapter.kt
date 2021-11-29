@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.christianrruiz.proyecto.model.SitiosItem
 import com.squareup.picasso.Picasso
 
 
