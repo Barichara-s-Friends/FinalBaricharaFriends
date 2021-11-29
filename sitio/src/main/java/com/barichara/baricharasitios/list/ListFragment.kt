@@ -34,7 +34,7 @@ class ListFragment : Fragment() {
         listSitio = loadMockSitioFromJson()
         sitioAdapter = SitioAdapter(listSitio, onItemClicked = { onSitioClicked(it) } )
 
-        listBinding.superheroesRecyclerView.apply {
+        listBinding.sitioRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = sitioAdapter
             setHasFixedSize(false)
@@ -43,7 +43,7 @@ class ListFragment : Fragment() {
     }
 
     private fun onSitioClicked(Sitio: SitioItem) {
-       findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(Sitio = Sitio))
+       findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(Sitio))
     }
 
     private fun loadMockSitioFromJson(): ArrayList<SitioItem> {
