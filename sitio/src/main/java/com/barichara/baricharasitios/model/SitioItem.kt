@@ -5,20 +5,12 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class SitioItem(
-    @SerializedName("alias")
-    val alias: String,
-    @SerializedName("city")
-    val city: String,
-    @SerializedName("facebook")
-    val facebook: String,
-    @SerializedName("height")
-    val height: Double,
-    @SerializedName("name")
-    val name: String,
-    @SerializedName("occupation")
-    val occupation: String,
-    @SerializedName("powers")
-    val powers: String,
-    @SerializedName("urlPicture")
-    val urlPicture: String
+    @SerializedName("calificacion")
+    val calificacion: String,
+    @SerializedName("descripcion")
+    val descripcion: String,
+    @SerializedName("nombre")
+    val nombre: String,
+    @SerializedName("urlFoto")
+    val urlFoto: String
 ) : Serializable
