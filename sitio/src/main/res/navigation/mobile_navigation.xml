@@ -23,7 +23,7 @@
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail">
         <argument
-            android:name="Sitio"
+            android:name="sitio"
             app:argType="com.barichara.sitio.model.SitioItem" />
     </fragment>
     <fragment

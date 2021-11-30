@@ -31,12 +31,12 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val sitio = args.sitio
+        val Sitio = args.sitio
 
         with(detailBinding){
-            nameTextView.text = sitio.nombre
-            powersTextView.text = sitio.descripcion
-            Picasso.get().load(sitio.urlFoto).into(pictureImageView)
+            nameTextView.text = Sitio.nombre
+            aliasTextView.text = Sitio.descripcion
+            Picasso.get().load(Sitio.urlFoto).into(pictureImageView)
         }
     }
 }
