@@ -12,11 +12,11 @@ class DetalleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         detalleBinding = ActivityDetalleBinding.inflate(layoutInflater)
         setContentView(detalleBinding.root)
-        val sitio: SitioItem = intent.extras?.getSerializable("sitio") as SitioItem
+        val Sitio: SitioItem = intent.extras?.getSerializable("Sitio") as SitioItem
         with(detalleBinding) {
-            nameTextView.text = sitio.nombre
-            powersTextView.text = sitio.descripcion
-            Picasso.get().load(sitio.urlFoto).into(pictureImageView)
+            nameTextView.text = Sitio.nombre
+            powersTextView.text = Sitio.descripcion
+            Picasso.get().load(Sitio.urlFoto).into(pictureImageView)
         }
     }
 }

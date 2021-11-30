@@ -35,9 +35,9 @@ class SitioAdapter(
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
 
         fun bind(Sitio: SitioItem) {
-            nameTextView.text = Sitio.nombre
-            aliasTextView.text = Sitio.descripcion
-            Picasso.get().load(Sitio.urlFoto).into(pictureImageView)
+            nameTextView.text = Sitio.name
+            aliasTextView.text = Sitio.alias
+            Picasso.get().load(Sitio.urlPicture).into(pictureImageView)
         }
     }
 }
