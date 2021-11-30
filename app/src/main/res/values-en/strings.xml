@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BaricharaFriends</string>
+    <string name="new_york">Nueva York</string>
+    <string name="new_york_description" tools:ignore="ExtraTranslation">New York includes 5 boroughs that are located where the Hudson River empties into the Atlantic Ocean. At its center is Manhattan, a densely populated district that is among the worlds leading commercial, financial, and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and expansive Central Park. The Broadway Theater is located in the neon-lit Times Square area.</string>
+</resources>
