@@ -1,10 +1,10 @@
 package com.barichara.sitio.list
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.barichara.sitio.databinding.FragmentListBinding
@@ -24,7 +24,6 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         listBinding = FragmentListBinding.inflate(inflater, container, false)
-
         return listBinding.root
     }
 
@@ -32,22 +31,22 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
         listSitio = loadMockSitioFromJson()
-        sitioAdapter = SitioAdapter(listSitio, onItemClicked = { onSitioClicked(it) } )
+        sitioAdapter = SitioAdapter(listSitio, onItemClicked = { onSitioClicked(it) })
 
         listBinding.sitioRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = sitioAdapter
             setHasFixedSize(false)
         }
-
     }
 
     private fun onSitioClicked(Sitio: SitioItem) {
-       findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(Sitio))
+        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(Sitio))
     }
 
     private fun loadMockSitioFromJson(): ArrayList<SitioItem> {
-        val sitioString: String = context?.assets?.open("sitio.json")?.bufferedReader().use { it!!.readText() } //TODO reparar !!
+        val sitioString: String = context?.assets?.open("sitio.json")?.bufferedReader()
+            .use { it!!.readText() }
         val gson = Gson()
         val sitioList = gson.fromJson(sitioString, Sitio::class.java)
         return sitioList

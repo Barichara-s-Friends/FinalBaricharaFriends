@@ -1,11 +1,11 @@
 package com.barichara.sitio.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.barichara.sitio.R
@@ -24,10 +24,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val fm : FragmentManager = supportFragmentManager
-        val ft : FragmentTransaction = fm.beginTransaction()
+        val fm: FragmentManager = supportFragmentManager
+        val ft: FragmentTransaction = fm.beginTransaction()
 
-        return when (item.itemId){
+        return when (item.itemId) {
             R.id.menu_preferences -> {
                 val settingsFragment = SettingsFragment()
                 ft.replace(R.id.fragmentContainerView, settingsFragment).commit()
@@ -38,17 +38,19 @@ class MainActivity : AppCompatActivity() {
                 onBackPressed()
                 true
             }
-            else -> {return true}
+            else -> {
+                return true
+            }
         }
     }
 
-    fun showIcon(){
-        val actionBar : ActionBar? = supportActionBar
+    fun showIcon() {
+        val actionBar: ActionBar? = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-    fun hideIcon(){
-        val actionBar : ActionBar? = supportActionBar
+    fun hideIcon() {
+        val actionBar: ActionBar? = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(false)
     }
 }
