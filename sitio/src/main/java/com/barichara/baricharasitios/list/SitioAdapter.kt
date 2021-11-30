@@ -1,6 +1,5 @@
 package com.barichara.sitio.list
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,7 +16,8 @@ class SitioAdapter(
 ) : RecyclerView.Adapter<SitioAdapter.SitioViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SitioViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_sitio_item, parent, false)
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.card_view_sitio_item, parent, false)
         return SitioViewHolder(view)
     }
 
@@ -28,18 +28,16 @@ class SitioAdapter(
     }
 
     override fun getItemCount(): Int = sitioList.size
-
-    class SitioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    class SitioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private var nameTextView: TextView = itemView.findViewById(R.id.name_text_view)
         private var aliasTextView: TextView = itemView.findViewById(R.id.alias_text_view)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
 
-        fun bind(Sitio: SitioItem){
-            Log.d("nombre",Sitio.name)
-            nameTextView.text = Sitio.name
-            aliasTextView.text = Sitio.alias
-            Picasso.get().load(Sitio.urlPicture).into(pictureImageView)
+        fun bind(Sitio: SitioItem) {
+            nameTextView.text = Sitio.nombre
+            aliasTextView.text = Sitio.descripcion
+            Picasso.get().load(Sitio.urlFoto).into(pictureImageView)
         }
     }
 }

@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">BaricharaFriends</string>
-    <string name="superman">Superman</string>
-    <string name="nombre_superman">Clark Kent</string>
-    <string name="poderes_superman">Super strength, flight, invulnerability, super speed, heat vision, freeze breath, x-ray vision, superhuman hearing, healing factor"</string>
-    <string name="nombre">Name:</string>
-    <string name="poderes">Powers:</string>
-    <string name="registro">Registro de un Superhoreo</string>
-    <string name="registrar">Registrar</string>
-    <string name="estatura">Estatura</string>
-    <string name="info">"Nombre: %s,\n estatura: %f,\n género: %s,\n poderes: %s, \ciudad: %s"</string>
-    <string name="genero">Género</string>
-    <string name="masculino">Masculino</string>
-    <string name="femenino">Femenino</string>
-    <string name="super_fuerza">Super Fuerza</string>
-    <string name="telequinesis">Telequinesis</string>
-    <string name="velocidad">Super velocidad</string>
-    <string name="ciudad_nacimiento">Ciudad de Nacimiento</string>
+    <string name="new_york">Nueva York</string>
+    <string name="new_york_description" tools:ignore="ExtraTranslation">New York includes 5 boroughs that are located where the Hudson River empties into the Atlantic Ocean. At its center is Manhattan, a densely populated district that is among the worlds leading commercial, financial, and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and expansive Central Park. The Broadway Theater is located in the neon-lit Times Square area.</string>
 </resources>

@@ -6,7 +6,7 @@ import java.io.Serializable
 
 data class SitioItem(
     @SerializedName("calificacion")
-    val calificacion: String,
+    val calificacion: Double,
     @SerializedName("descripcion")
     val descripcion: String,
     @SerializedName("nombre")
