@@ -12,28 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
         <activity
+            android:name=".tabbed.TabbedActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/Theme.Proyecto.NoActionBar" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
             android:name=".drawer.DrawerActivity"
             android:exported="true"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/Theme.Proyecto.NoActionBar" >
+            android:theme="@style/Theme.Proyecto.NoActionBar">
 
         </activity>
         <activity
             android:name=".botton.BottonActivity"
             android:exported="true"
-            android:label="@string/title_activity_botton">
-
-        </activity>
+            android:label="@string/title_activity_botton" />
         <activity
             android:name=".main.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

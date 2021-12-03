@@ -50,7 +50,7 @@ El camino se hizo con losas de piedra plana muy abundante en la región, y comie
     <string name="title_detail">Detalle</string>
     <string name="title_list">Lista</string>
     <string name="title_activity_drawer">DrawerActivity</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">Barichara Friends</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -59,6 +59,9 @@ El camino se hizo con losas de piedra plana muy abundante en la región, y comie
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="preferences">Preferencias</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 
 
 </resources>
