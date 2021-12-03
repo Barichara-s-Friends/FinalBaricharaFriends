@@ -6,6 +6,10 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "proyecto"
+rootProject.name = "Baricharafriend's"
 include ':app'
+<<<<<<< HEAD
 include ':baricharafriends'
+=======
+include ':sitio'
+>>>>>>> 832ac4ad6464a80eedfc02babec07b5067085db4
